@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1 class="city-name">
+      Amsterdam
+    </h1>
+    <h2 id="time">Friday 20:53 
+    </h2>
+    <br />
+     <div class="row">
+          <div class="col-6>
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="temp" id="temp">
+              </div>
+            </div>
+          </div>
+      
+             <ul id="explain">
+
+            <li>
+      <span class="desc">
+        Windy
+     </span> </li>
+              <li>Humidity: <span class="humid"></span>%</li>
+              <li>Wind: <span class="wind"></span> km/h</li>
+            </ul>
+       <hr>
+    </span>
+
+    <div class="row">
+      <div class=" t col-2">
+        21 <br />🌤 <br />
+        20°
+      </div>
+      <div class="t col-2">
+        22 <br />
+        🌄 <br />
+        20°
+      </div>
+      <div class="t col-2">
+        23 <br />
+        🌧<br />
+        20°
+      </div>
+      <div class="t col-2">
+        00 <br />
+        🌧<br />
+        20°
+      </div>
+      <div class="t col-2">
+        01 <br />
+        🌃<br />
+        20°
+      </div> <hr>
+      <div class="week col-2" id="sat"> saturday <br> 🌧 <br> 17°
+    </div>
+    <div class=" week col-2" id"sun"> sunday <br> ☁️ <br> 16°
+    </div>
+    <div class="week col-2" id"mon"> monday <br> 🌧 <br> 14°
+    </div>
+    <div class="week col-2" id"tue"> tuesday <br> ☀️<br> 12°
+    </div>
+    <div class="week col-2" id"wed"> wednesday <br> 🌤 <br> 24°
+    </div> 
+    <br>
+
+    <form id= "city-form">
+      <input type="text" name="city" id="email" value="city" required />
+      <input id= button type="submit" value="change city!" />
+  </form>
+  <span class="col-auto">
+      <button
+        type="submit"
+        id="current"
+      >
+        current
+      </button>
+    </span>
+
+  <h3><span class="units">
+    <a href="#" id="cel">°C</a> |
+    <a href="#" id="fahr">°F</a>
+  </span>
+</h3>
+           
+          </span>
+        </div>
+      </div>
+    <script rel="stylesheet"  src="src/index.js"></script>
+  </body>
+</html>

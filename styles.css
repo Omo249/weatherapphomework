@@ -1,0 +1,65 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0px;
+  background-color: transparent;
+  border: solid black;
+  border-radius: 100px;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
+  display: block;
+  text-align: center;
+}
+.t {
+  color: rgb(8, 22, 34);
+}
+.week {
+  background-color: transparent;
+  border-radius: 0px;
+  border: 1px solid black;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
+  display: block;
+}
+
+body {
+  background: linear-gradient(to left, white, #59d1da, #445faa);
+  display: block;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+.col-form-label {
+  font-weight: bold;
+}
+
+#city-form {
+  display: block;
+  border-radius: 100px;
+  text-align: left;
+  display: block;
+}
+#button {
+  background-color: transparent;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
+  border-radius: 100px;
+  text-align: left;
+}
+#current {
+  background-color: transparent;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
+  border-radius: 100px;
+  text-align: left;
+}
+
+#button:hover {
+  background-color: white;
+  border-radius: 100px;
+}
+#current:hover {
+  background-color: rgb(248, 244, 244);
+  border-radius: 100px;
+}
+
+.temp {
+  display: block;
+  font-size: 50px;
+}
