@@ -64,3 +64,12 @@ body {
 #link {
   color: blueviolet;
 }
+.temp {
+  text-align: left;
+}s
+.humid {
+  text-align: left;
+}
+.wind {
+  text-align: left;
+}
