@@ -59,17 +59,17 @@ body {
 .temp {
   display: block;
   font-size: 50px;
+  text-align: left;
 }
 
 #link {
   color: blueviolet;
 }
-.temp {
-  text-align: left;
-}s
 .humid {
+  display: block;
   text-align: left;
 }
 .wind {
+  display: block;
   text-align: left;
 }
