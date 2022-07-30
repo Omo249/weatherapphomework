@@ -30,10 +30,8 @@ body {
 }
 
 #city-form {
-  display: block;
   border-radius: 100px;
   text-align: right;
-  display: block;
 }
 #button {
   background-color: transparent;
