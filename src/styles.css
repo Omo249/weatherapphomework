@@ -70,6 +70,6 @@ body {
   text-align: left;
 }
 #units {
-  display: inline;
+  display: block;
   text-align: left;
 }
