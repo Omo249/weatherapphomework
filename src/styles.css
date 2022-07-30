@@ -71,9 +71,5 @@ body {
 }
 .units {
   display: inline-block;
-  text-align: left;
   position: relative;
-  line-height: 1;
-  top: -90px;
-  right: 50px;
 }
