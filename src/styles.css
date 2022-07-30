@@ -30,9 +30,13 @@ body {
 }
 
 #city-form {
-  display: block;
-  border-radius: 100px;
-  text-align: right;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+  height: 44px;
+  outline: 0;
+  padding: 10px;
+  width: 300px;
 }
 #button {
   background-color: transparent;
