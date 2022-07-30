@@ -14,7 +14,6 @@ h1 {
 .week {
   background-color: transparent;
   border-radius: 0px;
-  border: 1px solid black;
   box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
   display: block;
 }
