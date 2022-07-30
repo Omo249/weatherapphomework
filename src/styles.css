@@ -72,8 +72,6 @@ body {
 #units {
   display: block;
   text-align: left;
-}
-#cel {
-  display: block;
-  text-align: left;
+  position: relative;
+  top: -20px;
 }
