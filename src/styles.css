@@ -65,11 +65,7 @@ body {
 #link {
   color: blueviolet;
 }
-.humid {
-  display: block;
-  text-align: left;
-}
-.wind {
+#explain {
   display: block;
   text-align: left;
 }
