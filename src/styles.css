@@ -70,5 +70,6 @@ body {
   text-align: left;
 }
 .units {
+  display: block;
   text-align: left;
 }
