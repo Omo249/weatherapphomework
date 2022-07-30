@@ -69,10 +69,3 @@ body {
   display: block;
   text-align: left;
 }
-.units {
-  display: inline;
-  position: relative;
-  top: -15px;
-  right: 100px;
-  left: -100px;
-}
