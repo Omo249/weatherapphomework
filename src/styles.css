@@ -72,4 +72,7 @@ body {
 .units {
   display: block;
   text-align: left;
+  position: relative;
+  line-height: 1;
+  top: -34px;
 }
