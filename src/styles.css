@@ -77,3 +77,6 @@ body {
   left: 90px;
   font-size: 50px;
 }
+.desc {
+  text-transform: capitalize;
+}
