@@ -69,3 +69,7 @@ body {
   display: block;
   text-align: left;
 }
+#units {
+  display: inline;
+  text-align: left;
+}
