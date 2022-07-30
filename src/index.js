@@ -24,6 +24,7 @@ function formatDate(date) {
 }
 
 function displayWeatherCondition(response) {
+  console.log(response.data);
   document.querySelector(".city-name").innerHTML = response.data.name;
   document.querySelector(".temp").innerHTML = Math.round(
     response.data.main.temp
