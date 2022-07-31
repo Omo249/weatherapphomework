@@ -76,3 +76,8 @@ body {
 .desc {
   text-transform: capitalize;
 }
+
+#icon {
+  width: 500px;
+  vertical-align: middle;
+}
