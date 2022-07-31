@@ -42,7 +42,7 @@ function displayWeatherCondition(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-  
+  celsiusTemperature = response.data.main.temp;
 }
 
 function searchCity(city) {
@@ -71,7 +71,7 @@ function getCurrentLocation(event) {
 
 function convertToFahrenheit(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (14 * 9) / 5 + 32;
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temp");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
@@ -94,5 +94,7 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let fahrenheitlink = document.querySelector("#fahr");
 fahrenheitlink.addEventListener("click, showFahrenheitTemperature");
+
+let celsiusTemperature = null;
 
 searchCity("New York");
