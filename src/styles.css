@@ -78,6 +78,7 @@ body {
 }
 
 #icon {
+  display: block;
   width: 90px;
-  text-align: center;
+  text-align: left;
 }
