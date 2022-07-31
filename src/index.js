@@ -75,6 +75,12 @@ function displayCelsiusTemperature(event) {
   let temperatureElement = document.querySelector("#temp");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+function searchLocation(position) {
+  let apiKey = "e92cc63923adeec1d32edb16e4c1dca3";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
 
 function getCurrentLocation(event) {
   event.preventDefault();
