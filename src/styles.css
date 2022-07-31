@@ -7,26 +7,14 @@ h1 {
   display: block;
   text-align: center;
 }
-.t {
-  color: rgb(8, 22, 34);
-}
-.week {
-  background-color: transparent;
-  border-radius: 0px;
-  box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
-  display: block;
-}
 
 body {
   background: linear-gradient(to left, white, #59d1da, #445faa);
   display: block;
 }
-.col-form-label {
-  font-weight: bold;
-}
 
 #city-form {
-  border-radius: 2px;
+  border-radius: 180px;
   display: block;
   text-align: right;
 }
@@ -95,4 +83,13 @@ body {
 
 #cel:hover {
   text-decoration: none;
+}
+
+.weather-forecast-date {
+  font-family: Helvetica Neue Ultra Thin;
+}
+.min-temp {
+  opacity: 0.5;
+}
+.max.temp {
 }
