@@ -71,13 +71,16 @@ function getCurrentLocation(event) {
 
 function convertToFahrenheit(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 66;
+  let fahrenheitTemperature = (14 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temp");
+  let fahrenheitlink = document.querySelector("#fahr");
+fahrenheitlink.addEventListener("click, showFahrenheitTemperature ");
+  temperatureElement.innerHTML = Math.round (fahrenheitTemperature);
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
+  let temperatureElement = document.querySelector("#cel");
   temperatureElement.innerHTML = 19;
 }
 
@@ -90,5 +93,7 @@ searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+
 
 searchCity("New York");
