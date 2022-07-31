@@ -82,6 +82,8 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
+document.querySelector("#icon").innerHTML =
+  response.data.weather[0].description;
 let iconElement = document.querySelector("#icon");
 iconElement.setAttribute(
   "src",
