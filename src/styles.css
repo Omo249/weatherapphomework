@@ -84,3 +84,15 @@ body {
   top: -10px;
   left: 0px;
 }
+#cel {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+#fahr {
+  text-decoration: none;
+}
+
+#cel:hover {
+  text-decoration: none;
+}

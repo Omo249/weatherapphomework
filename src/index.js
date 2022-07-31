@@ -93,10 +93,10 @@ let currentLocationButton = document.querySelector("#current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let fahrenheitLink = document.querySelector("#fahr");
-fahrenheitLink.addEventListener("click, showFahrenheitTemperature");
+fahrenheitLink.addEventListener("click, displayFahrenheitTemperature");
 
 let celsiusLink = document.querySelector("#cel");
-celsiusLink.addEventListener("click, showCelsiusTemperature");
+celsiusLink.addEventListener("click, displayCelsiusTemperature");
 
 let celsiusTemperature = null;
 
