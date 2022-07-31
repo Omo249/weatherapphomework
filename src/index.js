@@ -24,7 +24,7 @@ function formatDate(timestamp) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Thursday", "Friday", "Saturday", "Sunday"];
+  let days = ["Thu", "Fri", "Sat", "Sun"];
   let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
     forecastHTML =
@@ -117,8 +117,6 @@ function getCurrentLocation(event) {
 
 let celsiusTemperature = null;
 
-displayForecast();
-
 let form = document.querySelector("#city-form");
 form.addEventListener("submit", handleSubmit);
 
@@ -132,3 +130,4 @@ let currentLocationButton = document.querySelector("#current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 search("New York");
+displayForecast();
