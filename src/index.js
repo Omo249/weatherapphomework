@@ -51,6 +51,10 @@ function displayForecast(response) {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
 
 function getForecast(coordinates) {
   console.log(coordinates);
@@ -125,5 +129,8 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#cel");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+let currentLocationButton = document.querySelector("#current");
+currentLocationButton.addEventListener("click", getCurrentLocation);
 
 search("New York");
