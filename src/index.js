@@ -78,8 +78,8 @@ function convertToFahrenheit(event) {
 
 function convertToCelsius(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#cel");
-  temperatureElement.innerHTML = 19;
+  let temperatureElement = document.querySelector("#temp");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 let dateElement = document.querySelector("#time");
@@ -92,8 +92,11 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-let fahrenheitlink = document.querySelector("#fahr");
-fahrenheitlink.addEventListener("click, showFahrenheitTemperature");
+let fahrenheitLink = document.querySelector("#fahr");
+fahrenheitLink.addEventListener("click, showFahrenheitTemperature");
+
+let celsiusLink = document.querySelector("#cel");
+celsiusLink.addEventListener("click, showCelsiusTemperature");
 
 let celsiusTemperature = null;
 
