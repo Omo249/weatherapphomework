@@ -42,7 +42,7 @@ function displayWeatherCondition(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-  getForecast(response.data.coord);
+  
 }
 
 function searchCity(city) {
@@ -93,6 +93,6 @@ let currentLocationButton = document.querySelector("#current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let fahrenheitlink = document.querySelector("#fahr");
-fahrenheitlink.addEventListener("click, showFahrenheitTemperature ");
+fahrenheitlink.addEventListener("click, showFahrenheitTemperature");
 
 searchCity("New York");
