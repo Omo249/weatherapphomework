@@ -88,9 +88,9 @@ body {
 .weather-forecast-date {
   font-family: Helvetica Neue Ultra Thin;
 }
-.min-temp {
+.weather-forecast-temperature-min {
   opacity: 0.5;
 }
-.max.temp {
+.weather-forecast-temperature-max {
   font-size: 13px;
 }
