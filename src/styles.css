@@ -87,6 +87,8 @@ body {
 
 .weather-forecast {
   color: #000;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .weather-forecast-date {
