@@ -92,6 +92,7 @@ body {
 .weather-forecast-date {
   font-size: 16px;
   opacity: 0.5;
+  font-family: Helvetica Neue Ultra Thin;
 }
 
 .weather-forecast-temperature-min {
