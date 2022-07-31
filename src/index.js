@@ -21,12 +21,15 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
 
-let forecastHTML = `<div class="row">`;
-days.forEach(function (day) {
-  forecastHTML =
-    forecastHTML +
-    `
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
       <div class="col-2">
         <div class="weather-forecast-date">${day}</div>
         <img
@@ -40,11 +43,12 @@ days.forEach(function (day) {
         </div>
       </div>
   `;
-});
+  });
 
-forecastHTML = forecastHTML + `</div>`;
-forecastElement.innerHTML = forecastHTML;
-console.log(forecastHTML);
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temp");
