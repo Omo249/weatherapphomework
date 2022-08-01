@@ -101,16 +101,16 @@ function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temp");
 
-  celsiusLink.classList.remove("cel");
-  fahrenheitLink.classList.add("cel");
+  celsiusLink.classList.remove("a");
+  fahrenheitLink.classList.add("a");
   let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
 }
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
-  celsiusLink.classList.add("cel");
-  fahrenheitLink.classList.remove("cel");
+  celsiusLink.classList.add("a");
+  fahrenheitLink.classList.remove("a");
   let temperatureElement = document.querySelector("#temp");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
