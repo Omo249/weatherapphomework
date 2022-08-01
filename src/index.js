@@ -101,7 +101,27 @@ function searchLocation(position) {
 
   axios.get(apiUrl).then(displayWeatherCondition);
 }
+function displayWeatherCondition(response) {
+  console.log(response.data);
+  document.querySelector(".city-name").innerHTML = response.data.name;
+  document.querySelector(".temp").innerHTML = Math.round(
+    response.data.main.temp
+  );
+  document.querySelector(".humid").innerHTML = response.data.main.humidity;
+  document.querySelector(".wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector(".desc").innerHTML = response.data.weather[0].main;
+  let iconElement = document.querySelector("#icon");
 
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  celsiusTemperature = response.data.main.temp;
+}
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#email");
