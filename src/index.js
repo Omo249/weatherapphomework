@@ -132,3 +132,4 @@ let currentLocationButton = document.querySelector("#current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 search("New York");
+displayForecast();
