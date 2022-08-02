@@ -112,10 +112,9 @@ function searchLocation(position) {
 
   axios.get(apiUrl).then(displayTemperature);
 }
-
 function getCurrentLocation(event) {
   event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchlocation);
+  navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
 function handleSubmit(event) {
