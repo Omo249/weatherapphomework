@@ -23,6 +23,7 @@ function formatDate(timestamp) {
 }
 
 function displayForecast() {
+  console.log(response.data);
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Thu", "Fri", "Sat", "Sun"];
@@ -140,4 +141,3 @@ let currentLocationButton = document.querySelector("#current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 search("New York");
-displayForecast();
